@@ -11,10 +11,11 @@ export default function PersonalData() {
     info: false,
   });
 
-  const { updateUserState } = useContext(context);
+  const { updateUserState, updateStepForm } = useContext(context);
 
   function handleClick() {
     updateUserState(userDataLocal);
+    updateStepForm(2);
   }
 
   return (
@@ -100,7 +101,7 @@ export default function PersonalData() {
         Quiero recibir información.
       </label>
       <button type="button" onClick={handleClick}>
-        Validar
+        Siguiente
       </button>
     </form>
   );
