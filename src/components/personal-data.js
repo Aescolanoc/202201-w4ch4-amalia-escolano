@@ -22,7 +22,7 @@ export default function PersonalData() {
     <form id="personal-data">
       <p>Datos de contacto</p>
       <label htmlFor="name">
-        Username:
+        Nombre:
         <input
           type="text"
           id="name"
@@ -30,11 +30,12 @@ export default function PersonalData() {
           onChange={(e) =>
             setUserData({ ...userDataLocal, name: e.target.value })
           }
-          name="username"
+          name="rname"
           required
         />
       </label>
       <label htmlFor="lastname">
+        Apellido:
         <input
           type="text"
           id="lastname"
@@ -46,6 +47,7 @@ export default function PersonalData() {
         />
       </label>
       <label htmlFor="birthdate">
+        Fecha de nacimiento:
         <input
           type="date"
           id="birthdate"
@@ -79,6 +81,7 @@ export default function PersonalData() {
         Mujer
       </label>
       <label htmlFor="email">
+        Email:
         <input
           type="email"
           id="email"
