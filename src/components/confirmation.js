@@ -1,17 +1,17 @@
 import { useContext } from 'react';
 import { context } from '../context/context-provider';
 
-export default function AccessData() {
-  const { updateStepForm } = useContext(context);
+export default function Confirmation() {
+  const { updateStepForm, updateUser } = useContext(context);
 
   function handleClick() {
-    // updateUserState(userDataLocal);
-    updateStepForm(3);
+    // updateUser()
+    updateStepForm('done');
   }
 
   return (
     <>
-      <h2>Datos de acceso</h2>
+      <h2>Formulario de confirmacion</h2>
       <button type="button" onClick={handleClick}>
         Pulsa aqui
       </button>
